@@ -29,10 +29,7 @@ class NewViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         }
         mTableView.backgroundView?.contentMode = .scaleAspectFill
         
-//        let backgroundImage = UIImage(named: "Tblebckground")
-//        let backgroundImageView = UIImageView(image: backgroundImage)
-//    backgroundImageView.contentMode = .scaleAspectFit // Adjust the content mode as needed
-//        view.im = backgroundImageView
+//
         let rightCornerRadius: CGFloat = 16
         let leftCornerRadius: CGFloat = 8.0
 
@@ -102,7 +99,7 @@ class NewViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         switch section{
         case 0 :
             let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as! HeaderTableViewCell
-            
+            print("HeaderTableViewCell")
             return cell
         case 1 :
             let cell = tableView.dequeueReusableCell(withIdentifier: "GoalsTableViewCell") as! GoalsTableViewCell
