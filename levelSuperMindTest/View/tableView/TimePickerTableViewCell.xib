@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimePickerTableViewCell" id="KGk-i7-Jjw" customClass="TimePickerTableViewCell" customModule="levelSuperMindTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdJ-uF-8EL" customClass="CardView" customModule="levelSuperMindTest" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="312" height="192"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a new time for reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUi-KX-rDE">
+                                <rect key="frame" x="2" y="3" width="308" height="20.333333333333332"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.329999999999998" id="U82-Ql-CLZ"/>
+                                    <constraint firstAttribute="width" constant="308" id="anZ-UL-sxp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="PTV-yF-UZv">
+                                <rect key="frame" x="4" y="27" width="304" height="161"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PTV-yF-UZv" secondAttribute="bottom" constant="4" id="3i1-xO-KHW"/>
+                            <constraint firstItem="KUi-KX-rDE" firstAttribute="centerX" secondItem="CdJ-uF-8EL" secondAttribute="centerX" id="8sZ-ev-ODg"/>
+                            <constraint firstItem="PTV-yF-UZv" firstAttribute="leading" secondItem="CdJ-uF-8EL" secondAttribute="leading" constant="4" id="MfP-RJ-p5A"/>
+                            <constraint firstItem="PTV-yF-UZv" firstAttribute="top" secondItem="KUi-KX-rDE" secondAttribute="bottom" constant="4" id="RwB-bR-Yfk"/>
+                            <constraint firstAttribute="trailing" secondItem="PTV-yF-UZv" secondAttribute="trailing" constant="4" id="Yvn-Gn-B5U"/>
+                            <constraint firstItem="KUi-KX-rDE" firstAttribute="top" secondItem="CdJ-uF-8EL" secondAttribute="top" constant="3" id="cU6-ZW-c2K"/>
+                            <constraint firstItem="KUi-KX-rDE" firstAttribute="leading" secondItem="CdJ-uF-8EL" secondAttribute="leading" constant="2" id="d3K-li-aEH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                <color key="value" red="0.81779511120854587" green="0.64110539235225339" blue="0.040181893069727893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerradius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CdJ-uF-8EL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="FYt-xb-F5V"/>
+                    <constraint firstAttribute="trailing" secondItem="CdJ-uF-8EL" secondAttribute="trailing" constant="4" id="KUC-if-3nQ"/>
+                    <constraint firstAttribute="bottom" secondItem="CdJ-uF-8EL" secondAttribute="bottom" constant="4" id="OAC-WY-VZ6"/>
+                    <constraint firstItem="CdJ-uF-8EL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="R31-WY-VUo"/>
+                    <constraint firstItem="CdJ-uF-8EL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="RGA-F7-aGj"/>
+                    <constraint firstItem="CdJ-uF-8EL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="pse-GL-aaG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Datepicker" destination="PTV-yF-UZv" id="I9T-Ah-ZQo"/>
+            </connections>
+            <point key="canvasLocation" x="48.854961832061065" y="-12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
